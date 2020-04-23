@@ -1,21 +1,10 @@
 
-<!DOCTYPE html>
-<html lang="en">
+<?php require('partials/head.php'); ?>
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Material Design Bootstrap</title>
-    <!-- Font Awesome -->
-   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
-    <!-- Bootstrap core CSS -->
-    <link href="../css/bootstrap.min.css" rel="stylesheet">
-    <!-- Material Design Bootstrap -->
-    <link href="../css/mdb.min.css" rel="stylesheet">
 
-    <!-- Your custom styles (optional) -->
-    <style>
+<body class="creative-lp">
+
+<style>
         .intro-2 {
             background: url("https://mdbootstrap.com/img/Photos/Others/images/91.jpg")no-repeat center center;
             background-size: cover;
@@ -78,11 +67,6 @@
             color: #fff;
         }
     </style>
-
-</head>
-
-
-<body class="creative-lp">
 
     <!--Main Navigation-->
     <header>

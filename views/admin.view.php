@@ -1,3 +1,5 @@
+<?php require('partials/head.php'); ?>
+
 <body class="fixed-sn white-skin">
 
   <!-- Main Navigation -->
@@ -104,7 +106,7 @@
               </button>
             </div>
             <div class="modal-body">
-              <form action="index.php" method="post">
+              <form action="/addpost" method="POST">
               <section class="mb-4">           
                 <div class="row">       
                     <!--Grid column-->
@@ -121,12 +123,12 @@
                                 </div>
                                 <!--Grid column-->           
                                 <!--Grid column-->
-                                <div class="col-md-6">
+                                <!-- <div class="col-md-6">
                                     <div class="md-form mb-0">
                                         <input placeholder="Выбрать дату" type="text" name="date" id="date-picker-example" class="form-control datepicker">
                                         <label for="date-picker-example">Дата</label>
                                     </div>
-                                </div>
+                                </div> -->
                                 <!--Grid column-->          
                             </div>
                             <!--Grid row-->
@@ -143,7 +145,7 @@
                                 </div>
                             </div>
                             <!--Grid row-->
-                            <div class="row">
+                            <!-- <div class="row">
                               <div class="col-md-12">
                                 <div class="file-field">
                                   <div class="btn blue-gradient btn-sm float-left">
@@ -155,7 +157,7 @@
                                   </div>
                                 </div>
                               </div>
-                            </div>
+                            </div> -->
                        
                     </div>
                     <!--Grid column-->
@@ -164,7 +166,7 @@
             </section>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
-                  <button type="button" class="btn btn-success btn-sm">Добавить</button>
+                  <button type="submit" class="btn btn-success btn-sm">Добавить</button>
                 </div>
             </form>
             </div>   

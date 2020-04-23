@@ -1,11 +1,11 @@
 <?php 
 
-$router->define([
-    '' => 'controllers/index.php',
-    'post' => 'controllers/post.php',
-    'news' => 'controllers/news.php',
-    'admin' => 'controllers/admin.php',
-    'login' => 'controllers/login.php',
-    'faculties' => 'controllers/faculties.php'
-]);
+$router->get('', 'PagesController@home');
+$router->get('post', 'PagesController@post');
+$router->get('news', 'PagesController@news');
+$router->get('faculties', 'PagesController@faculties');
+$router->get('login', 'PagesController@login');
+
+$router->get('admin', 'PostController@index');
+$router->post('addpost', 'PostController@store');
 

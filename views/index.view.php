@@ -165,17 +165,18 @@
               <!--First slide-->
               <div class="carousel-item active">
                 <!--Grid column-->
+                <?php foreach($results as $result): ?>
                 <div class="col-md-4">
-
+                
                   <div class="card card-cascade wider">
 
                       <!-- Card image -->
                       <div class="view view-cascade gradient-card-header peach-gradient">
-
+                    
                         <!-- Title -->
-                        <h2 class="card-header-title mb-3">Заголовок</h2>
+                        <h2 class="card-header-title mb-3"><?= $result->title; ?></h2>
                         <!-- Text -->
-                        <p class="mb-0"><i class="fas fa-calendar mr-2"></i>02.04.2020</p>
+                        <p class="mb-0"><i class="fas fa-calendar mr-2"></i><?= $result->date; ?></p>
 
                       </div>
 
@@ -183,9 +184,7 @@
                       <div class="card-body card-body-cascade text-center">
 
                         <!-- Text -->
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex minis
-                          recusandae. Facere modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus
-                          non quos laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
+                        <p class="card-text"><?= $result->description; ?></p>
                         <!-- Link -->
                         <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
                           <h5 class="waves-effect waves-light">Просмотреть<i class="fas fa-angle-double-right ml-2"></i></h5>
@@ -195,293 +194,27 @@
                       <!-- Card content -->
 
                     </div>
-
+                    
                 </div>
+                <?php endforeach; ?>
                 <!--Grid column-->
 
-                <!--Grid column-->
-                <div class="col-md-4 ">
-                  
-                   <div class="card card-cascade wider">
-
-                      <!-- Card image -->
-                      <div class="view view-cascade gradient-card-header peach-gradient">
-
-                        <!-- Title -->
-                        <h2 class="card-header-title mb-3">Заголовок</h2>
-                        <!-- Text -->
-                        <p class="mb-0"><i class="fas fa-calendar mr-2"></i>02.04.2020</p>
-
-                      </div>
-
-                      <!-- Card content -->
-                      <div class="card-body card-body-cascade text-center">
-
-                        <!-- Text -->
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex minis
-                          recusandae. Facere modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus
-                          non quos laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
-                        <!-- Link -->
-                        <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
-                          <h5 class="waves-effect waves-light">Просмотреть<i class="fas fa-angle-double-right ml-2"></i></h5>
-                        </a>
-
-                      </div>
-                      <!-- Card content -->
-
-                    </div>
                 
-                </div>
                 <!--Grid column-->
 
                 <!--Grid column-->
-                <div class="col-md-4 clearfix d-none d-sm-block">
-                 <div class="card card-cascade wider">
-
-                    <!-- Card image -->
-                    <div class="view view-cascade gradient-card-header peach-gradient">
-
-                      <!-- Title -->
-                      <h2 class="card-header-title mb-3">Заголовок</h2>
-                      <!-- Text -->
-                      <p class="mb-0"><i class="fas fa-calendar mr-2"></i>02.04.2020</p>
-
-                    </div>
-
-                    <!-- Card content -->
-                    <div class="card-body card-body-cascade text-center">
-
-                      <!-- Text -->
-                      <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex minis
-                        recusandae. Facere modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus
-                        non quos laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
-                      <!-- Link -->
-                      <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
-                        <h5 class="waves-effect waves-light">Просмотреть<i class="fas fa-angle-double-right ml-2"></i></h5>
-                      </a>
-
-                    </div>
-                    <!-- Card content -->
-
-                  </div>
-                </div>
+               
                 <!--Grid column-->
 
               </div>
               <!--First slide-->
 
               <!--Second slide-->
-              <div class="carousel-item">
-                <!--Grid column-->
-                <div class="col-md-4">
-
-                  <div class="card card-cascade wider">
-
-                      <!-- Card image -->
-                      <div class="view view-cascade gradient-card-header peach-gradient">
-
-                        <!-- Title -->
-                        <h2 class="card-header-title mb-3">Заголовок</h2>
-                        <!-- Text -->
-                        <p class="mb-0"><i class="fas fa-calendar mr-2"></i>02.04.2020</p>
-
-                      </div>
-
-                      <!-- Card content -->
-                      <div class="card-body card-body-cascade text-center">
-
-                        <!-- Text -->
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex minis
-                          recusandae. Facere modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus
-                          non quos laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
-                        <!-- Link -->
-                        <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
-                          <h5 class="waves-effect waves-light">Просмотреть<i class="fas fa-angle-double-right ml-2"></i></h5>
-                        </a>
-
-                      </div>
-                      <!-- Card content -->
-
-                    </div>
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-4 clearfix d-none d-sm-block">
-                  <div class="card card-cascade wider">
-
-                      <!-- Card image -->
-                      <div class="view view-cascade gradient-card-header peach-gradient">
-
-                        <!-- Title -->
-                        <h2 class="card-header-title mb-3">Заголовок</h2>
-                        <!-- Text -->
-                        <p class="mb-0"><i class="fas fa-calendar mr-2"></i>02.04.2020</p>
-
-                      </div>
-
-                      <!-- Card content -->
-                      <div class="card-body card-body-cascade text-center">
-
-                        <!-- Text -->
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex minis
-                          recusandae. Facere modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus
-                          non quos laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
-                        <!-- Link -->
-                        <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
-                          <h5 class="waves-effect waves-light">Просмотреть<i class="fas fa-angle-double-right ml-2"></i></h5>
-                        </a>
-
-                      </div>
-                      <!-- Card content -->
-
-                    </div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-4 clearfix d-none d-sm-block">
-                  <div class="card card-cascade wider">
-
-                      <!-- Card image -->
-                      <div class="view view-cascade gradient-card-header peach-gradient">
-
-                        <!-- Title -->
-                        <h2 class="card-header-title mb-3">Заголовок</h2>
-                        <!-- Text -->
-                        <p class="mb-0"><i class="fas fa-calendar mr-2"></i>02.04.2020</p>
-
-                      </div>
-
-                      <!-- Card content -->
-                      <div class="card-body card-body-cascade text-center">
-
-                        <!-- Text -->
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex minis
-                          recusandae. Facere modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus
-                          non quos laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
-                        <!-- Link -->
-                        <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
-                          <h5 class="waves-effect waves-light">Просмотреть<i class="fas fa-angle-double-right ml-2"></i></h5>
-                        </a>
-
-                      </div>
-                      <!-- Card content -->
-
-                    </div>
-                </div>
-                <!--Grid column-->
-
-              </div>
+             
               <!--Second slide-->
 
               <!--Third slide-->
-              <div class="carousel-item">
-                <!--Grid column-->
-                <div class="col-md-4">
-
-                 <div class="card card-cascade wider">
-
-                      <!-- Card image -->
-                      <div class="view view-cascade gradient-card-header peach-gradient">
-
-                        <!-- Title -->
-                        <h2 class="card-header-title mb-3">Заголовок</h2>
-                        <!-- Text -->
-                        <p class="mb-0"><i class="fas fa-calendar mr-2"></i>02.04.2020</p>
-
-                      </div>
-
-                      <!-- Card content -->
-                      <div class="card-body card-body-cascade text-center">
-
-                        <!-- Text -->
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex minis
-                          recusandae. Facere modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus
-                          non quos laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
-                        <!-- Link -->
-                        <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
-                          <h5 class="waves-effect waves-light">Просмотреть<i class="fas fa-angle-double-right ml-2"></i></h5>
-                        </a>
-
-                      </div>
-                      <!-- Card content -->
-
-                    </div>
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-4 clearfix d-none d-sm-block">
-                  <div class="card card-cascade wider">
-
-                      <!-- Card image -->
-                      <div class="view view-cascade gradient-card-header peach-gradient">
-
-                        <!-- Title -->
-                        <h2 class="card-header-title mb-3">Заголовок</h2>
-                        <!-- Text -->
-                        <p class="mb-0"><i class="fas fa-calendar mr-2"></i>02.04.2020</p>
-
-                      </div>
-
-                      <!-- Card content -->
-                      <div class="card-body card-body-cascade text-center">
-
-                        <!-- Text -->
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex minis
-                          recusandae. Facere modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus
-                          non quos laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
-                        <!-- Link -->
-                        <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
-                          <h5 class="waves-effect waves-light">Просмотреть<i class="fas fa-angle-double-right ml-2"></i></h5>
-                        </a>
-
-                      </div>
-                      <!-- Card content -->
-
-                    </div>
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-md-4 clearfix d-none d-sm-block">
-                  
-                  <div class="card card-cascade wider">
-
-                      <!-- Card image -->
-                      <div class="view view-cascade gradient-card-header peach-gradient">
-
-                        <!-- Title -->
-                        <h2 class="card-header-title mb-3">Заголовок</h2>
-                        <!-- Text -->
-                        <p class="mb-0"><i class="fas fa-calendar mr-2"></i>02.04.2020</p>
-
-                      </div>
-
-                      <!-- Card content -->
-                      <div class="card-body card-body-cascade text-center">
-
-                        <!-- Text -->
-                        <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus, ex minis
-                          recusandae. Facere modi sunt, quod quibusdam dignissimos neque rem nihil ratione est placeat vel, natus
-                          non quos laudantium veritatis sequi.Ut enim ad minima veniam, quis nostrum.</p>
-                        <!-- Link -->
-                        <a href="#!" class="orange-text d-flex flex-row-reverse p-2">
-                          <h5 class="waves-effect waves-light">Просмотреть<i class="fas fa-angle-double-right ml-2"></i></h5>
-                        </a>
-
-                      </div>
-                      <!-- Card content -->
-
-                    </div>
-
-                </div>
-                <!--Grid column-->
-
-              </div>
+             
               <!--Third slide-->
 
             </div>
