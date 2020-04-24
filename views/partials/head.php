@@ -10,7 +10,6 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="../public/css/bootstrap.min.css">
-  <link rel="stylesheet" href="../public/css/bootstrap.min.css">
   <!-- Material Design Bootstrap -->
   <link rel="stylesheet" href="../public/css/mdb.min.css">
   <!-- Your custom styles (optional) -->

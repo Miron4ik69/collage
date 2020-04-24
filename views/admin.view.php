@@ -69,20 +69,28 @@
                               <th>Действия</th>
                             </tr>
                           </thead>
+                          
+                          <?php foreach(array_reverse($posts) as $post) : ?>
+                           
                           <tbody>
                             <tr>
-                              <th scope="row">1</th>
-                              <td>Тест</td>
-                              <td>Тест</td>
-                              <td>03.05.2020</td>
+                              <th scope="row"><?= $post->id; ?></th>
+                              <td><?= $post->title; ?></td>
+                              <td><?= $post->description; ?></td>
+                              <td><?= $post->date; ?></td>
                               <td>
                                 <a class="blue-text" data-toggle="tooltip" data-placement="top" title="See results"><i
-                                    class="far fa-eye"></i></a>
-                                <a class="teal-text" data-toggle="tooltip" data-placement="top" title="Edit"><i class="fas fa-pencil-alt"></i></a>
-                                <a class="red-text" data-toggle="tooltip" data-placement="top" title="Remove"><i class="fas fa-times"></i></a>
+                                    class="far fa-eye"></i></a>                                   
+                                <a class="teal-text" type="button" data-target="#updatePostModal" data-toggle="modal" title="Edit"><i class="fas fa-pencil-alt"></i></a>
+                                <form action="/delete" method="POST">
+                                  <button name="<?= $post->id; ?>" type="submit" class="red-text" title="Remove"><i class="fas fa-times"></i></button>
+                                </form>
                               </td>
                             </tr>
                           </tbody>
+                          
+                          <?php endforeach; ?>
+                            
                         </table>
                       </div>
                     </div>   
@@ -93,86 +101,11 @@
           </div>
         </div>
       </section>
-        <div class="modal fade" id="centralModalSm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-        aria-hidden="true">
 
-        <!-- Change class .modal-sm to change the size of the modal -->
-        <div class="modal-dialog modal-lg" role="document">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h4 class="modal-title w-100" id="myModalLabel">Добавить пост</h4>
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form action="/addpost" method="POST">
-              <section class="mb-4">           
-                <div class="row">       
-                    <!--Grid column-->
-                    <div class="col-md-12 mb-md-0 mb-5">
-                        
-                            <!--Grid row-->
-                            <div class="row">      
-                                <!--Grid column-->
-                                <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input type="text" id="name" name="title" class="form-control">
-                                        <label for="title" class="">Заголовок поста</label>
-                                    </div>
-                                </div>
-                                <!--Grid column-->           
-                                <!--Grid column-->
-                                <!-- <div class="col-md-6">
-                                    <div class="md-form mb-0">
-                                        <input placeholder="Выбрать дату" type="text" name="date" id="date-picker-example" class="form-control datepicker">
-                                        <label for="date-picker-example">Дата</label>
-                                    </div>
-                                </div> -->
-                                <!--Grid column-->          
-                            </div>
-                            <!--Grid row-->
-            
-            
-                            <!--Grid row-->
-                            <div class="row">
-                                <!--Grid column-->
-                                <div class="col-md-12">
-                                    <div class="md-form">
-                                        <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                                        <label for="message">Содержимое поста</label>
-                                    </div>         
-                                </div>
-                            </div>
-                            <!--Grid row-->
-                            <!-- <div class="row">
-                              <div class="col-md-12">
-                                <div class="file-field">
-                                  <div class="btn blue-gradient btn-sm float-left">
-                                    <span><i class="fas fa-cloud-upload-alt mr-2" aria-hidden="true"></i>Выберите файл</span>
-                                    <input type="file" name="image" multiple>
-                                  </div>
-                                  <div class="file-path-wrapper">
-                                    <input class="file-path validate" type="text" placeholder="Добавить">
-                                  </div>
-                                </div>
-                              </div>
-                            </div> -->
-                       
-                    </div>
-                    <!--Grid column-->
-                </div>
-            
-            </section>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary btn-sm" data-dismiss="modal">Закрыть</button>
-                  <button type="submit" class="btn btn-success btn-sm">Добавить</button>
-                </div>
-            </form>
-            </div>   
-          </div>
-        </div>
-        </div>
+     
+      <?php require('partials/modals.php'); ?>
+
+      
 
     </div>
   </main>

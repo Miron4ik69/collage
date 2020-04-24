@@ -3,7 +3,7 @@
     <!--Navbar-->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark scrolling-navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="/">
           <strong>LOGO</strong>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -14,12 +14,12 @@
           <!--Links-->
           <ul class="navbar-nav mr-auto smooth-scroll">
             <li class="nav-item">
-              <a class="nav-link" href="#">Головна
+              <a class="nav-link" href="/">Головна
                 <span class="sr-only">(current)</span>
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about" data-offset="100">Коледж</a>
+              <a class="nav-link" href="#about" data-offset="100">Новости</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#faculties" data-offset="100">Абітурієнту</a>
@@ -30,6 +30,8 @@
             <li class="nav-item">
               <a class="nav-link" href="/events" data-offset="100">Рада директорів</a>
             </li>
+            
+            
           </ul>
 
           <!--Social Icons-->

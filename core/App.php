@@ -13,7 +13,6 @@ class App
 
    public static function get($key) 
    {
-
         if(!array_key_exists($key, static::$reqistry)) {
             throw new Exception("Нет {$key}, в контейнере");
         }

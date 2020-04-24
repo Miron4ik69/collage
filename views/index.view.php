@@ -50,30 +50,31 @@
         <a class="navbar-brand" href="#">
           <strong>LOGO</strong>
         </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" 
+           aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <!--Links-->
           <ul class="navbar-nav mr-auto smooth-scroll">
             <li class="nav-item">
-              <a class="nav-link" href="#home">Головна
-                <span class="sr-only">(current)</span>
+              <a class="nav-link" href="/">Головна
+                
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about" data-offset="100">Коледж</a>
+              <a class="nav-link" href="/news ">Новости</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#faculties" data-offset="100">Абітурієнту</a>
+              <a class="nav-link" href="#faculties">Абітурієнту</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#courses" data-offset="100">Публічна інформація</a>
+              <a class="nav-link" href="#courses" >Публічна інформація</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#events" data-offset="100">Рада директорів</a>
+              <a class="nav-link" href="#events">Рада директорів</a>
             </li>
+      
           </ul>
 
           <!--Social Icons-->
@@ -81,11 +82,6 @@
             <li class="nav-item">
               <a class="nav-link">
                 <i class="fab fa-facebook-f"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link">
-                <i class="fab fa-twitter"></i>
               </a>
             </li>
             <li class="nav-item">
@@ -140,24 +136,8 @@
           <div id="multi-item-example" class="carousel testimonial-carousel slide carousel-multi-item wow fadeIn"
             data-ride="carousel">
 
-            <!--Controls-->
-            <div class="controls-top">
-              <a class="btn-floating light-blue darken-4" href="#multi-item-example" data-slide="prev">
-                <i class="fas fa-chevron-left"></i>
-              </a>
-              <a class="btn-floating light-blue darken-4" href="#multi-item-example" data-slide="next">
-                <i class="fas fa-chevron-right"></i>
-              </a>
-            </div>
-            <!--Controls-->
-
-            <!--Indicators-->
-            <ol class="carousel-indicators">
-              <li data-target="#multi-item-example" data-slide-to="0" class="active light-blue darken-4"></li>
-              <li data-target="#multi-item-example" data-slide-to="1" class="light-blue darken-4"></li>
-              <li data-target="#multi-item-example" data-slide-to="2" class="light-blue darken-4"></li>
-            </ol>
-            <!--Indicators-->
+           
+            
 
             <!--Slides-->
             <div class="carousel-inner text-center" role="listbox">

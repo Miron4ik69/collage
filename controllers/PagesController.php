@@ -5,7 +5,7 @@ class PagesController
     public function home() 
     {
         
-       $results = App::get('database')->selectAll('post');
+       $results = App::get('database')->selectLast('post');
 
        return view('index', compact('results')); 
     }

@@ -8,4 +8,5 @@ $router->get('login', 'PagesController@login');
 
 $router->get('admin', 'PostController@index');
 $router->post('addpost', 'PostController@store');
+$router->post('delete', 'PostController@delete');
 
